@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 /* VARIABLES */
 
 :root{
@@ -1426,4 +1427,12 @@ body{
 .site-footer__tel-link:active{
   color: #333333;
   opacity: 0.6;
+}
+
+.site-desc{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: end;
+  color: #5C5C5C;
 }
