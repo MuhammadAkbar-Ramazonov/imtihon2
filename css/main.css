@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 /* VARIABLES */
 
@@ -745,6 +752,7 @@ body{
   background-size: 21px 21px;
 }
 
+
 .site-link-yellow:hover{
   color: #FFBD54;
   background-color: #333333;
@@ -1464,8 +1472,12 @@ body{
 .service-hero__desc {
   font-size: 16px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   color: #949494;
 }
@@ -1476,22 +1488,79 @@ body{
 }
 .service-list__list {
   list-style: none;
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 305px 30px 305px 30px 305px 30px 305px;
   grid-template-columns: repeat(4, 305px);
+  -ms-grid-rows: 420px 30px 420px 30px 420px;
   grid-template-rows: repeat(3, 420px);
   grid-gap: 30px;
   margin: 0;
   padding: 0;
+}
+.service-list__list > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.service-list__list > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.service-list__list > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.service-list__list > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.service-list__list > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.service-list__list > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.service-list__list > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.service-list__list > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+.service-list__list > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.service-list__list > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.service-list__list > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+.service-list__list > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
 }
 .service-item {
   border-radius: 5px;
   padding: 58px 22px 45px 53px;
   background-color: #FFFFFF;
   border-radius: 5px 5px 0px 0px;
+  background-image: url("../image/pets.svg");
+  background-repeat: no-repeat;
+  background-position: top rig;
 }
 .service-item:hover{
-  filter: drop-shadow(0px 4px 20px #00000033);
+  -webkit-filter: drop-shadow(0px 4px 20px #00000033);
+          filter: drop-shadow(0px 4px 20px #00000033);
 }
 .service-item::before{
   content: "";
@@ -1583,4 +1652,11 @@ body{
   color: #FFFFFF;
   background: #78C0DE;
   border-radius: 3px;
+}
+.service-item__link--hover{
+  background-color:  #ffbd54;
+}
+.service-item__link--hover:hover{
+  color: #fff;
+  background-color: #000000;
 }
