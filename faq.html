@@ -235,5 +235,28 @@
     </div>
   </footer>
   <!-- Site footer finish -->
+
+  <!-- modal start -->
+  <div class="modal">
+    <div class="modal-wrapper">
+      <div class="modal__inner"> 
+        <button class="modal__btn" type="button"></button>
+        <div class="modal__social modal-social">
+          <strong class="modal-social__title">Авторизация:</strong>
+          <a class="modal-social-link" href="#">Войти через Google</a>
+          <a class="modal-social-link modal-social-link--facebook" href="#">Войти через Facebook</a>
+        </div>
+        <form class="contact____form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+          <h2 class="modal__title">Задать вопрос</h2>
+          <input class="contact__input contact__input--modal" type="text" name="user_name" aria-label="Опишите Ваш зовут!" placeholder="Ваше имя" minlength="2" required="">
+          <textarea class="contact__textarea contact__textarea--modal" name="your text" cols="30" rows="10" aria-label="Опишите Ваш вопрос или сообщение" placeholder="Опишите Ваш вопрос. 
+Например: в каком возрасте можно прививать от бешенства?"  minlength="3" required=""></textarea>
+          <button class="modal__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+
 </body>
 </html>
