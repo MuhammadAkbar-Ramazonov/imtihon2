@@ -1523,6 +1523,9 @@ body{
           transform: rotate(180deg);  
   
 }
+.faqs-details--none[open] .faqs-details__summary::after {
+  transform: rotate(0deg); 
+}
 
 .faqs-details:last-child {
   margin-bottom: 0;
