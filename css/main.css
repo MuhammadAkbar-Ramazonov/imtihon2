@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 /* VARIABLES */
 
@@ -1454,6 +1461,130 @@ body{
   color: #5C5C5C;
 }
 
+/* contact page start */
+.contact-hero {
+  padding-top: 110px;
+  padding-bottom: 131px;
+  background-image: url("../image/dog-doctor.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 413px) top;
+}
+.contact-hero__wrapper {
+  width: 447px;
+}
+.contact-hero__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  margin-top: 0;
+  margin-bottom: 27px;
+  color: #333333;
+}
+.contact-hero__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 117px;
+  color: #949494;
+}
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-hero__bold {
+}
+.contact-list__item {
+  margin-right: 118px;
+}
+.contact-list__item::before {
+  content: "";
+  display: block;
+  width: 73px;
+  height: 73px;
+  margin-bottom: 30px;
+  background-image: url("../image/location.svg");
+  background-repeat: no-repeat;
+}
+.contact-list__item:nth-child(2):before {
+  width: 77px;
+  height: 72px;
+  background-image: url("../image/kalendar.svg");
+}
+.contact-list__item:nth-child(3):before {
+  width: 50px;
+  height: 73px;
+  background-image: url("../image/phone-chat.svg");
+}
+
+.contact-list__item:last-child {
+  margin-right: 0;
+}
+.contact-list__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+.contact-hero__bold {
+}
+
+
+.location {
+  margin-bottom: 206px;
+  padding-top: 264px;
+  background-image: url("../image/search.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 207px) top ;
+}
+.location__wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+.location__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  color: #333333;
+}
+.location__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.location__inner::before {
+  content: "";
+  position: absolute;
+  top: -287px;
+  left: 21px;
+  width: 443px;
+  height: 342px;
+  background-image: url("../image/dog.png");
+}
+
+.location__img {
+}
+
+
 /* faq page start */
 
 .faq-hero {
@@ -1952,11 +2083,11 @@ body{
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-top: 36px;
   margin-right: 133px;
 }
@@ -1974,8 +2105,8 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 238px;
   padding: 14px 25px;
   font-weight: 500;

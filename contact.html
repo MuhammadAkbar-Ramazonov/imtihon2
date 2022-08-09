@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
   <!-- Site header start -->
@@ -21,13 +21,13 @@
           </address>
           <ul class="site-header__top-list">
             <li class="site-header__top-item">
-              <a class="site-header__link" href="tel:0676347574">(067) 634 -75 - 74</a>
+              <a class="site-header__link" href="tel:+0676347574">(067) 634 -75 - 74</a>
             </li>
             <li class="site-header__top-item">
-              <a class="site-header__link" href="tel:0637570131">(0637) 57 - 01 - 31</a>
+              <a class="site-header__link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
             </li>
             <li class="site-header__top-item">
-              <a class="site-header__link" href="tel:0982664389">(098) 266 - 43 - 89</a>
+              <a class="site-header__link" href="tel:+0982664389">(098) 266 - 43 - 89</a>
             </li>
           </ul>
           <ul class="site-header__top-list">
@@ -87,10 +87,45 @@
   <!-- site main start -->
   <main class="site-main">
     <!-- hero section start -->
-    <section class="hero">
-      
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero__wrapper">
+          <h2 class="contact-hero__title">Контакты</h2>
+          <p class="contact-hero__desc">Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+        </div>
+        <ul class="contact-hero__list contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__link" href="https://goo.gl/maps/g75Re8GweeGBLowm6" target="blank"><strong>г. Мариуполь,</strong><br> проспект Победы, 48а</a>
+          </li>
+          <li class="contact-list__item">
+            <time class="contact-list__link" datetime="2020-05-03 18:00">
+              <strong>Пн - Пт</strong> 8:00 - 18:00
+            </time>
+            <time class="site-header__top-item-time" datetime="2020-05-03 14:00">
+              <strong>Сб - Вс</strong> 8:00 - 14:00
+            </time>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__link" href="tel:+0676347574">(067) 634 -75 - 74</a>
+            <a class="contact-list__link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
+            <a class="contact-list__link" href="tel:+0982664389">(098) 266 - 43 - 89</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- hero section finish -->
+    
+    <!-- location setcion start -->
+    <section class="location">
+      <div class="location__wrapper">
+        <h3 class="location__title">Как нас найти?</h3>
+        <div class="location__inner">
+          <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.7503866949312!2d37.54360756737108!3d47.11017926578681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e475146e8609%3A0xf262285308f99ac8!2z0JrQuNGA0L_QuNGH0L3QsNGPINGD0LsuLCAyOSwg0JzQsNGA0LjRg9C_0L7Qu9GMLCDQlNC-0L3QtdGG0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgODc1MDA!5e0!3m2!1sru!2s!4v1659776277262!5m2!1sru!2s" width="847" height="466" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <img class="location__img" src="./image/house.jpg" width="593" height="466" srcset="./image/house.jpg 1x ,./image/house@2x.jpg 2x" alt=" house img">
+        </div>
+      </div>
+    </section>
+    <!-- location setcion finish -->
     
   </main>
   <!-- site main finish -->
@@ -169,7 +204,7 @@
           <h2 class="modal__title">Задать вопрос</h2>
           <input class="contact__input contact__input--modal" type="text" name="user_name" aria-label="Опишите Ваш зовут!" placeholder="Ваше имя" minlength="2" required="">
           <textarea class="contact__textarea contact__textarea--modal" name="your text" cols="30" rows="10" aria-label="Опишите Ваш вопрос или сообщение" placeholder="Опишите Ваш вопрос. 
-Например: в каком возрасте можно прививать от бешенства?"  minlength="3" required=""></textarea>
+          Например: в каком возрасте можно прививать от бешенства?"  minlength="3" required=""></textarea>
           <button class="modal__button" type="submit">Отправить</button>
         </form>
       </div>
