@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 /* VARIABLES */
 
@@ -1117,6 +1124,8 @@ body{
 }
 .inspection-form__wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .inspection-form__wrapper::after {
@@ -1148,16 +1157,6 @@ body{
   line-height: 30px;
   margin: 0;
   color: #FFFFFF;
-}
-.site-form {
-}
-.site-form__input {
-}
-.site-form__textarea {
-}
-.site-link-black {
-}
-.site-link-black--btn {
 }
 
 /* contact section start */
@@ -2076,17 +2075,23 @@ body{
   margin-top: 33px;
   margin-bottom: 122px;
 }
-.container {
-}
 .inspection-hero__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 .inspection-hero__inner {
   margin-right: 142px;
 }
 .inspection-hero__karta-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -2095,7 +2100,11 @@ body{
 }
 .inspection-hero__karta-item {
   margin-right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .inspection-hero__karta-item::after {
@@ -2132,8 +2141,6 @@ body{
   margin-bottom: 28px;
   color: #333333;
 }
-.inspection-hero__tex-wrapper {
-}
 .inspection-hero__text {
   width: 640px;
   font-weight: 400;
@@ -2165,18 +2172,255 @@ body{
 .site-link-black--link {
 }
 .card--active{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .card__item--first{
   margin-bottom: 11px;
 }
 
+/* status page start */
+
+/* hero section start */
+.status-hero {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background-image: url("../image/cat-hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 317px) calc(50% + 1px);
+}
+.status-hero__inner{
+  margin-left: 105px;
+}
+.status-hero__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  color: #333333;
+}
+.status-hero__desc {
+  width: 447px;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  line-height: 20px;
+  color: #949494;
+}
+
+/* list section start */
+.status {
+}
+.status__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 126px;
+}
+.status__wrapper-inner {
+  padding: 68px 110px 68px 81px;
+}
+.status__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+.status__item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.status__item-item {
+  margin-right: 7px;
+}
+.status__item-item:last-child {
+  margin-right: 0;
+}
+.status__item-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #3D9CEA;
+}
+.status__data {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+}
+.status__item-title {
+  width: 325px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.status__item-desc {
+  width: 517px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #949494;
+}
+.status__learnmore-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 21px;
+  color: #333;
+}
+.status__learnmore-link:hover {
+  color: #ffbd54;
+}
+.status__learnmore-link:active {
+  color: #333;
+  opacity: .7;
+}
+.status__learnmore-link::before {
+  content: "";
+  width: 39px;
+  height: 27px;
+  margin-right: 5px;
+  background-image: url(../image/pet.svg);
+  background-repeat: no-repeat;
+}
 
 
+.status__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 116px;
+}
+.status__item {
+  width: 305px;
+  margin-right: 30px;
+  background-color: #F9F9F9;
+  border: 1px solid #E4E4E2;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+.status__item:hover{
+  -webkit-filter: drop-shadow(0px 4px 4px #00000040);
+          filter: drop-shadow(0px 4px 4px #00000040);
+}
+.status__item:nth-child(4) {
+  margin-right: 0;
+}
+.status__item:nth-child(5) {
+  margin-bottom: 0;
+}
+.status__item:nth-child(6) {
+  margin-bottom: 0;
+}
+.status__item:nth-child(7) {
+  margin-bottom: 0;
+}
+.status__item:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.status__item-img {
+  width: 305px;
+  height: 180px;
+}
+.status__text-wrapper{
+  padding: 21px 22px 36px 22px;
+}
+.status__item-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 3px;
+  color: #949494;
+  
+}
+.status__item-text {
+  width: 201px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 11px;
+  color: #000000;
+}
+.status__item-description {
+  width: 244px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 36px;
+  color: #949494;
+}
+.status__btn{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 201px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  padding: 16px 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0;
+  background-color: #333333;
+  border-radius: 3px;
+}
+.status__btn::before{
+  content: "";
+  width: 19px;
+  height: 16px;
+  margin-right: 16px;
+  background-image: url("../image/load.svg");
+}
 
-
-
-
+.status__btn:hover {
+  color: #333333;
+  background-color: #FFBD54;
+}
+.status__btn:active {
+  opacity: 0.6;
+}
 
 /* about page satrt */
 .about-hero {
